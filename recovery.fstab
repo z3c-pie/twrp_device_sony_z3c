@@ -1,10 +1,12 @@
-# mount point    fstype    device                                         flags
+# mount point    fstype    device                                           flags
 
-/boot            emmc      /dev/block/bootdevice/by-name/boot             flags=backup=1;display="Boot "Kernel"";
+/boot            emmc      /dev/block/bootdevice/by-name/boot               flags=backup=1;display="Boot";
 /cache           ext4      /dev/block/bootdevice/by-name/cache
 
-/data            ext4      /dev/block/bootdevice/by-name/userdata         flags=encryptable=footer;length=-16384;retainlayoutversion;
-/system          ext4      /dev/block/bootdevice/by-name/system           flags=display="System";mounttodecrypt;
+/data            ext4      /dev/block/bootdevice/by-name/userdata           flags=encryptable=footer;length=-16384;retainlayoutversion;
+/system          ext4      /dev/block/bootdevice/by-name/system             flags=display="System";mounttodecrypt;
 
-/external_sd     auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1        flags=display="MicroSD card";storage;wipeingui;removable;
-/usb-otg         auto      /dev/block/sda1      /dev/block/sda            flags=display="USB OTG";storage;wipeingui;removable;
+/misc            emmc      /dev/block/platform/msm_sdcc.1/by-name/apps_log
+
+/external_sd     auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1          flags=display="MicroSD card";storage;wipeingui;removable;
+/usb-otg         auto      /dev/block/sda1      /dev/block/sda              flags=display="USB OTG";storage;wipeingui;removable;
