@@ -14,19 +14,19 @@
 # limitations under the License.
 
 # Device identification
-PRODUCT_NAME   := omni_aries
+PRODUCT_NAME   := omni_z3c
 PRODUCT_MODEL  := Xperia Z3 Compact
-PRODUCT_DEVICE := aries
+PRODUCT_DEVICE := z3c
 PRODUCT_BRAND  := Sony
 PRODUCT_MANUFACTURER := Sony
-PRODUCT_RELEASE_NAME := aries
+PRODUCT_RELEASE_NAME := z3c
 SOMC_PLATFORM  := shinano
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := D5803,D5833,aries
+TARGET_OTA_ASSERT_DEVICE := z3c
 
 # Inherit device configurations
-$(call inherit-product, device/sony/aries/device.mk)
+$(call inherit-product, device/sony/z3c/device.mk)
 
 # TWRP Сonfigurations
 TW_THEME := portrait_hdpi

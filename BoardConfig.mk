@@ -15,7 +15,7 @@
 #
 
 # Board device path
-DEVICE_PATH := device/sony/aries
+DEVICE_PATH := device/sony/z3c
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := D5803

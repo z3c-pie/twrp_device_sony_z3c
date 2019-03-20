@@ -15,7 +15,7 @@
 #
 
 # Device path
-DEVICE_PATH := device/sony/aries
+DEVICE_PATH := device/sony/z3c
 TWRP_OUT    := recovery/root
 
 # Ramdisk fstab file
