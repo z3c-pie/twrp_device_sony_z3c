@@ -62,6 +62,9 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 # Recovery
 RECOVERY_SDCARD_ON_DATA := true
 
+# System-as-root
+BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
+
 # TWRP specific build flags
 TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
