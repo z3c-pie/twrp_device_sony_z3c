@@ -41,7 +41,7 @@ TARGET_NO_KERNEL := false
 # Kernel properties
 TARGET_KERNEL_ARCH := arm
 TARGET_KERNEL_HEADER_ARCH := arm
-TARGET_KERNEL_VERSION := 3.10
+TARGET_KERNEL_VERSION := 3.4
 BOARD_KERNEL_IMAGE_NAME := kernel
 # Kernel file
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilts/kernel
@@ -57,7 +57,7 @@ BOARD_MKBOOTIMG_ARGS     := --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 # Kernel cmdline
 BOARD_KERNEL_CMDLINE += androidboot.hardware=qcom
 BOARD_KERNEL_CMDLINE += console=ttyHSL0,115200,n8
-BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x3F ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE += msm_rtb.filter=0x3b7 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
 BOARD_KERNEL_CMDLINE += coherent_pool=8M vmalloc=300M
 BOARD_KERNEL_CMDLINE += sched_enable_power_aware=1 user_debug=31
