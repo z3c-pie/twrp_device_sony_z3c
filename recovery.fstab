@@ -1,0 +1,13 @@
+/boot            emmc      /dev/block/bootdevice/by-name/boot
+/cache           ext4      /dev/block/bootdevice/by-name/cache
+/data            ext4      /dev/block/bootdevice/by-name/userdata               flags=encryptable=footer;length=-16384
+/efs1            emmc      /dev/block/bootdevice/by-name/modemst1               flags=backup=1;display="EFS"
+/efs2            emmc      /dev/block/bootdevice/by-name/modemst2               flags=backup=1;subpartitionof=/efs1
+/efsg            emmc      /dev/block/bootdevice/by-name/fsg                    flags=backup=1;subpartitionof=/efs1
+/misc            emmc      /dev/block/bootdevice/by-name/apps_log
+/recovery        emmc      /dev/block/bootdevice/by-name/FOTAKernel             flags=backup=1
+/system          ext4      /dev/block/bootdevice/by-name/system
+/TA              emmc      /dev/block/bootdevice/by-name/TA                     flags=backup=1;display="Trim Area"
+
+/external_sd     auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1              flags=storage;wipeingui;removable;display="MicroSD card"
+/usb_otg         auto      /dev/block/sda1      /dev/block/sda                  flags=storage;wipeingui;removable;display="USB-OTG"
