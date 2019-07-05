@@ -4,5 +4,11 @@
    "repository": "z3c-pie/kernel_sony_msm8974",
    "target_path": "kernel/sony/msm8974",
    "revision": "lineage-16.0"
+ },
+ {
+   "remote": "github",
+   "repository": "LineageOS/android_system_tools_dtbtool",
+   "target_path": "system/tools/dtbtool",
+   "revision": "lineage-16.0"
  }
 ]
