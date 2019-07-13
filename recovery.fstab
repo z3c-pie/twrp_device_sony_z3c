@@ -2,10 +2,9 @@
 /boot            emmc      /dev/block/bootdevice/by-name/boot
 /cache           ext4      /dev/block/bootdevice/by-name/cache
 /data            ext4      /dev/block/bootdevice/by-name/userdata               flags=length=-16384
+/misc            emmc      /dev/block/bootdevice/by-name/apps_log
+/recovery        emmc      /dev/block/bootdevice/by-name/FOTAKernel             flags=backup=1
 /system          ext4      /dev/block/bootdevice/by-name/system                 flags=mounttodecrypt
-
-/misc            emmc      /dev/block/platform/msm_sdcc.1/by-name/apps_log
-/recovery        emmc      /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel    flags=backup=1
 
 # Removeable storage
 /external_sd     auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1              flags=display="MicroSD card";storage;wipeingui;removable;
