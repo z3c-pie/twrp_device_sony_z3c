@@ -49,7 +49,7 @@ on fs
 on property:sys.usb.config=mtp
     write /sys/class/android_usb/android0/enable 0
     write /sys/class/android_usb/android0/idVendor 0FCE
-    write /sys/class/android_usb/android0/idProduct 0${ro.usb.pid_suffix}
+    write /sys/class/android_usb/android0/idProduct 01BB
     write /sys/class/android_usb/android0/bDeviceClass 0
     write /sys/class/android_usb/android0/bDeviceSubClass 0
     write /sys/class/android_usb/android0/bDeviceProtocol 0
@@ -73,7 +73,7 @@ on property:sys.usb.config=adb
 on property:sys.usb.config=mtp,adb
     write /sys/class/android_usb/android0/enable 0
     write /sys/class/android_usb/android0/idVendor 0FCE
-    write /sys/class/android_usb/android0/idProduct 5${ro.usb.pid_suffix}
+    write /sys/class/android_usb/android0/idProduct 51BB
     write /sys/class/android_usb/android0/bDeviceClass 0
     write /sys/class/android_usb/android0/bDeviceSubClass 0
     write /sys/class/android_usb/android0/bDeviceProtocol 0
