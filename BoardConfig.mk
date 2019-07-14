@@ -93,8 +93,4 @@ TW_USE_TOOLBOX := true
 
 # TWRP Crypto
 TW_INCLUDE_CRYPTO := true
-TW_CRYPTO_USE_SYSTEM_VOLD := \
-    qseecomd \
-    keymaster-3-0 \
-    hwservicemanager \
-    servicemanager
+TW_CRYPTO_USE_SBIN_VOLD := true
