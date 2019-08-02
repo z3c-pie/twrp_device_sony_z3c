@@ -98,3 +98,8 @@ TW_CRYPTO_USE_SYSTEM_VOLD := \
     keymaster-3-0 \
     hwservicemanager \
     servicemanager
+
+TW_CRYPTO_SYSTEM_VOLD_DEBUG := true
+
+TWRP_INCLUDE_LOGCAT := true
+TARGET_USES_LOGD := true
