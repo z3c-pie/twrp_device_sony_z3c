@@ -1,5 +1,4 @@
 # DRM
-bin/hwservicemanager:recovery/root/sbin/hwservicemanager
 lib/lib_asb_tee.so:recovery/root/lib/lib_asb_tee.so
 lib/libkeyctrl.so:recovery/root/lib/libkeyctrl.so
 lib/libidd.so:recovery/root/lib/libidd.so
@@ -9,6 +8,9 @@ vendor/lib/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so
 vendor/lib/libdiag.so:recovery/root/vendor/lib/libdiag.so
 vendor/lib/libdrmfs.so:recovery/root/vendor/lib/libdrmfs.so
 vendor/lib/libdrmtime.so:recovery/root/vendor/lib/libdrmtime.so
+
+# hwservicemanager
+bin/hwservicemanager:recovery/root/sbin/hwservicemanager
 
 # Firmware
 etc/firmware/cmnlib.b00:recovery/root/etc/firmware/cmnlib.b00
@@ -21,3 +23,8 @@ vendor/firmware/keymaster/keymaster.b01:recovery/root/vendor/firmware/keymaster/
 vendor/firmware/keymaster/keymaster.b02:recovery/root/vendor/firmware/keymaster/keymaster.b02
 vendor/firmware/keymaster/keymaster.b03:recovery/root/vendor/firmware/keymaster/keymaster.b03
 vendor/firmware/keymaster/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt
+
+# Keymaster
+vendor/bin/hw/android.hardware.keymaster@3.0-service:recovery/root/sbin/android.hardware.keymaster@3.0-service
+vendor/lib/hw/android.hardware.keymaster@3.0-impl.so:recovery/root/vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
+vendor/lib/libkeymaster3device.so:recovery/root/vendor/lib/libkeymaster3device.so

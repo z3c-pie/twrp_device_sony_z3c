@@ -33,6 +33,9 @@ on init
 
     setprop ro.board.platform msm8974
 
+    mount none /system/lib/ /lib/ bind
+    mount none /system/etc/ /etc/ bind
+
 on fs
     wait /dev/block/platform/msm_sdcc.1
     symlink /dev/block/platform/msm_sdcc.1 /dev/block/bootdevice
@@ -45,5 +48,22 @@ service sbinqseecomd /sbin/qseecomd
     group root
     seclabel u:r:recovery:s0
 
+service hwservicemanager /sbin/hwservicemanager
+    user root
+    group root
+    disabled
+    onrestart setprop hwservicemanager.ready false
+    seclabel u:r:recovery:s0
+
+service keymaster-3-0 /sbin/android.hardware.keymaster@3.0-service
+    user root
+    group root
+    disabled
+    seclabel u:r:recovery:s0
+
 on property:ro.crypto.state=encrypted
     start sbinqseecomd
+
+on property:sys.listeners.registered=true
+    start hwservicemanager
+    start keymaster-3-0
