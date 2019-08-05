@@ -1,7 +1,4 @@
 # DRM
-lib/lib_asb_tee.so:recovery/root/lib/lib_asb_tee.so
-lib/libkeyctrl.so:recovery/root/lib/libkeyctrl.so
-lib/libidd.so:recovery/root/lib/libidd.so
 vendor/bin/qseecomd:recovery/root/sbin/qseecomd
 vendor/lib/hw/keystore.msm8974.so:recovery/root/vendor/lib/hw/keystore.msm8974.so
 vendor/lib/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so

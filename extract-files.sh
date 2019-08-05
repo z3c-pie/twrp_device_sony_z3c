@@ -63,15 +63,12 @@ function blob_fixup() {
     case "${1}" in
     recovery/root/sbin/android.hardware.keymaster@3.0-service)
         sed -i "s|/system/bin/linker|/sbin/linker\x0\x0\x0\x0\x0\x0|g" "${2}"
-        sed -i "s|/system/bin/sh\x0|/sbin/sh\x0\x0\x0\x0\x0\x0\x0|g" "${2}"
         ;;
     recovery/root/sbin/hwservicemanager)
         sed -i "s|/system/bin/linker|/sbin/linker\x0\x0\x0\x0\x0\x0|g" "${2}"
-        sed -i "s|/system/bin/sh\x0|/sbin/sh\x0\x0\x0\x0\x0\x0\x0|g" "${2}"
         ;;
     recovery/root/sbin/qseecomd)
         sed -i "s|/system/bin/linker|/sbin/linker\x0\x0\x0\x0\x0\x0|g" "${2}"
-        sed -i "s|/system/bin/sh\x0|/sbin/sh\x0\x0\x0\x0\x0\x0\x0|g" "${2}"
         ;;
     esac
 }
