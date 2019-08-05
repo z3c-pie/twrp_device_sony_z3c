@@ -1,4 +1,5 @@
 # DRM
+bin/hwservicemanager:recovery/root/sbin/hwservicemanager
 lib/lib_asb_tee.so:recovery/root/lib/lib_asb_tee.so
 lib/libkeyctrl.so:recovery/root/lib/libkeyctrl.so
 lib/libidd.so:recovery/root/lib/libidd.so
