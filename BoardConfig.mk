@@ -74,6 +74,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 
 # Recovery
 BOARD_HAS_NO_SELECT_BUTTON := true
+TARGET_RECOVERY_DEVICE_DIRS += vendor/sony/z3c/proprietary
 
 # TWRP specific build flags
 RECOVERY_SDCARD_ON_DATA := true
