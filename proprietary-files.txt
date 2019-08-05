@@ -25,6 +25,7 @@ vendor/firmware/keymaster/keymaster.b03:recovery/root/vendor/firmware/keymaster/
 vendor/firmware/keymaster/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt
 
 # Keymaster
+lib/libpuresoftkeymasterdevice.so:recovery/root/vendor/lib/libpuresoftkeymasterdevice.so
 vendor/bin/hw/android.hardware.keymaster@3.0-service:recovery/root/sbin/android.hardware.keymaster@3.0-service
 vendor/lib/hw/android.hardware.keymaster@3.0-impl.so:recovery/root/vendor/lib/hw/android.hardware.keymaster@3.0-impl.so
 vendor/lib/libkeymaster3device.so:recovery/root/vendor/lib/libkeymaster3device.so
