@@ -1,0 +1,22 @@
+# DRM
+lib/lib_asb_tee.so:recovery/root/lib/lib_asb_tee.so
+lib/libkeyctrl.so:recovery/root/lib/libkeyctrl.so
+lib/libidd.so:recovery/root/lib/libidd.so
+vendor/bin/qseecomd:recovery/root/sbin/qseecomd
+vendor/lib/hw/keystore.msm8974.so:recovery/root/vendor/lib/hw/keystore.msm8974.so
+vendor/lib/libQSEEComAPI.so:recovery/root/vendor/lib/libQSEEComAPI.so
+vendor/lib/libdiag.so:recovery/root/vendor/lib/libdiag.so
+vendor/lib/libdrmfs.so:recovery/root/vendor/lib/libdrmfs.so
+vendor/lib/libdrmtime.so:recovery/root/vendor/lib/libdrmtime.so
+
+# Firmware
+etc/firmware/cmnlib.b00:recovery/root/etc/firmware/cmnlib.b00
+etc/firmware/cmnlib.b01:recovery/root/etc/firmware/cmnlib.b01
+etc/firmware/cmnlib.b02:recovery/root/etc/firmware/cmnlib.b02
+etc/firmware/cmnlib.b03:recovery/root/etc/firmware/cmnlib.b03
+etc/firmware/cmnlib.mdt:recovery/root/etc/firmware/cmnlib.mdt
+vendor/firmware/keymaster/keymaster.b00:recovery/root/vendor/firmware/keymaster/keymaster.b00
+vendor/firmware/keymaster/keymaster.b01:recovery/root/vendor/firmware/keymaster/keymaster.b01
+vendor/firmware/keymaster/keymaster.b02:recovery/root/vendor/firmware/keymaster/keymaster.b02
+vendor/firmware/keymaster/keymaster.b03:recovery/root/vendor/firmware/keymaster/keymaster.b03
+vendor/firmware/keymaster/keymaster.mdt:recovery/root/vendor/firmware/keymaster/keymaster.mdt

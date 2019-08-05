@@ -4,7 +4,7 @@
 /data            ext4      /dev/block/bootdevice/by-name/userdata               flags=encryptable=footer;length=-16384
 /misc            emmc      /dev/block/bootdevice/by-name/apps_log
 /recovery        emmc      /dev/block/bootdevice/by-name/FOTAKernel             flags=backup=1
-/system          ext4      /dev/block/bootdevice/by-name/system                 flags=mounttodecrypt
+/system          ext4      /dev/block/bootdevice/by-name/system
 
 # Removeable storage
 /external_sd     auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1              flags=display="MicroSD card";storage;wipeingui;removable;
