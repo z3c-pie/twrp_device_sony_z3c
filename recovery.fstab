@@ -1,11 +1,9 @@
-# mount point    fstype    device          device2                                       flags
-/boot            emmc      /dev/block/platform/msm_sdcc.1/by-name/boot
-/cache           ext4      /dev/block/platform/msm_sdcc.1/by-name/cache
-/data            ext4      /dev/block/platform/msm_sdcc.1/by-name/userdata               flags=encryptable=footer;length=-16384
-/misc            emmc      /dev/block/platform/msm_sdcc.1/by-name/apps_log
-/recovery        emmc      /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel             flags=backup=1
-/system          ext4      /dev/block/platform/msm_sdcc.1/by-name/system
+# Android fstab file.
+# The filesystem that contains the filesystem checker binary (typically /system) cannot
+# specify MF_CHECK, and must come before any filesystems that do specify MF_CHECK
 
-# Removeable storage
-/external_sd     auto      /dev/block/mmcblk1p1 /dev/block/mmcblk1                       flags=display="MicroSD card";storage;wipeingui;removable;
-/usb_otg         auto      /dev/block/sda1 /dev/block/sda                                flags=display="USB-OTG";storage;wipeingui;removable;
+# Currently we dont have e2fsck compiled. So fs check would failed.
+
+#<src>                                                <mnt_point>  <type>  <mnt_flags and options>                                     <fs_mgr_flags>
+/dev/block/platform/msm_sdcc.1/by-name/userdata       /data        ext4    noatime,nosuid,nodev,barrier=1,noauto_da_alloc              wait,check,formattable,encryptable=footer,length=-16384
+/dev/block/platform/msm_sdcc.1/by-name/userdata       /data        f2fs    noatime,nosuid,nodev,rw,inline_xattr                        wait,check,formattable,encryptable=footer,length=-16384

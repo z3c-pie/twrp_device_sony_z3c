@@ -33,9 +33,6 @@ on init
 
     setprop ro.board.platform msm8974
 
-    mount none /system/lib/ /lib/ bind
-    mount none /system/etc/ /etc/ bind
-
 on fs
     wait /dev/block/platform/msm_sdcc.1
     symlink /dev/block/platform/msm_sdcc.1 /dev/block/bootdevice
