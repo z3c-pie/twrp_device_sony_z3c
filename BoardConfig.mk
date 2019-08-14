@@ -79,6 +79,7 @@ TARGET_RECOVERY_DEVICE_DIRS := device/sony/z3c
 TARGET_RECOVERY_DEVICE_DIRS += vendor/sony/z3c/proprietary
 
 # TWRP specific build flags
+TARGET_RECOVERY_QCOM_RTC_FIX := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
 TW_EXCLUDE_SUPERSU := true
 TW_INCLUDE_CRYPTO := true
