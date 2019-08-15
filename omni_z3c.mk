@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The Android Open Source Project
+# Copyright 2019 The Android Open Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,6 +21,10 @@ $(call inherit-product, build/target/product/embedded.mk)
 
 # Inherit from our custom product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
+
+# USB
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.usb.pid_suffix=1BB
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := z3c
