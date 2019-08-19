@@ -25,6 +25,8 @@
 # ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
+import init.recovery.power.rc
+
 on init
     chmod 0660 /dev/qseecom
     chown system drmrpc /dev/qseecom
