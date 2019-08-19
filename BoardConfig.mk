@@ -66,8 +66,6 @@ TARGET_BOARD_PLATFORM_GPU := qcom-adreno330
 
 # Recovery
 RECOVERY_SDCARD_ON_DATA := true
-TARGET_RECOVERY_DEVICE_DIRS := device/sony/z3c
-TARGET_RECOVERY_DEVICE_DIRS += vendor/sony/z3c/proprietary
 
 # TWRP specific build flags
 TARGET_RECOVERY_QCOM_RTC_FIX := true
