@@ -29,7 +29,7 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_CONFIG    := lineageos_shinano_aries_defconfig
+TARGET_KERNEL_CONFIG    := lineageos_shinano_leo_defconfig
 TARGET_KERNEL_SOURCE    := kernel/sony/msm8974
 BOARD_KERNEL_BASE       := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb

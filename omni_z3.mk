@@ -15,7 +15,7 @@
 #
 
 # Release name
-PRODUCT_RELEASE_NAME := z3c
+PRODUCT_RELEASE_NAME := z3
 
 $(call inherit-product, build/target/product/embedded.mk)
 
@@ -24,11 +24,11 @@ $(call inherit-product, vendor/omni/config/common.mk)
 
 # USB
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.usb.pid_suffix=1BB
+    ro.usb.pid_suffix=1BA
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := z3c
-PRODUCT_NAME := omni_z3c
+PRODUCT_DEVICE := z3
+PRODUCT_NAME := omni_z3
 PRODUCT_BRAND := Sony
-PRODUCT_MODEL := Xperia Z3 Compact
+PRODUCT_MODEL := Xperia Z3
 PRODUCT_MANUFACTURER := Sony
