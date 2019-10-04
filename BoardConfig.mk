@@ -36,7 +36,7 @@ BOARD_KERNEL_IMAGE_NAME := zImage-dtb
 BOARD_KERNEL_PAGESIZE   := 2048
 
 BOARD_KERNEL_CMDLINE    := androidboot.hardware=qcom
-BOARD_KERNEL_CMDLINE    += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE    += user_debug=23 msm_rtb.filter=0x3b7 ehci-hcd.park=3
 BOARD_KERNEL_CMDLINE    += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
 BOARD_KERNEL_CMDLINE    += androidboot.selinux=permissive
 
