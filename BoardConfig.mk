@@ -29,16 +29,16 @@ TARGET_BOOTLOADER_BOARD_NAME := MSM8974
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_CONFIG := lineageos_shinano_aries_defconfig
-BOARD_KERNEL_BASE := 0x00000000
+TARGET_KERNEL_CONFIG    := lineageos_shinano_aries_defconfig
+TARGET_KERNEL_SOURCE    := kernel/sony/msm8974
+BOARD_KERNEL_BASE       := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := zImage-dtb
-BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_SOURCE := kernel/sony/msm8974
+BOARD_KERNEL_PAGESIZE   := 2048
 
-BOARD_KERNEL_CMDLINE := androidboot.hardware=qcom
-BOARD_KERNEL_CMDLINE += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
-BOARD_KERNEL_CMDLINE += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+BOARD_KERNEL_CMDLINE    := androidboot.hardware=qcom
+BOARD_KERNEL_CMDLINE    += user_debug=31 msm_rtb.filter=0x37 ehci-hcd.park=3
+BOARD_KERNEL_CMDLINE    += dwc3.maximum_speed=high dwc3_msm.prop_chg_detect=Y
+BOARD_KERNEL_CMDLINE    += androidboot.selinux=permissive
 
 # lzma compression
 LZMA_RAMDISK_TARGETS := recovery
